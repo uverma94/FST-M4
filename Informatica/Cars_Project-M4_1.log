@@ -1,0 +1,224 @@
+Task Name: Cars_Project-M4
+Agent Group Id: 025000000000002
+Agent Group Name: Informatica Cloud Hosted Agent
+Agent Id: 00800000000000E
+09/09/2021 03:48:28 **** Importing Connection: Conn_01ASGN0B000000000004 ...
+09/09/2021 03:48:28 **** Importing Source Definition: Cars ...
+09/09/2021 03:48:28 **** Importing Target Definition: Max_Car_Prices ...
+09/09/2021 03:48:28 **** Importing Target Definition: Min_Car_Prices ...
+09/09/2021 03:48:28 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  Cars...
+    Validating Target Definition  Min_Car_Prices...
+    Validating Target Definition  Max_Car_Prices...
+09/09/2021 03:48:28 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: CarsDB - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< CarsDB > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+09/09/2021 03:48:28 **** Importing Workflow: wf_mtt_01ASGN0Z000000000006 ...
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_01ASGN0Z000000000006].  Starting repository sequence id is [-494706712]
+DIRECTOR> VAR_27085 [2021-09-09 03:48:28.922] Parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/parameters/s_mtt_01ASGN0Z000000000006.param] is opened for [session [wf_mtt_01ASGN0Z000000000006.s_mtt_01ASGN0Z000000000006]].
+DIRECTOR> VAR_27062 [2021-09-09 03:48:28.923] Warning! Cannot find section for worklet [wf_mtt_01ASGN0Z000000000006] and folder [] in parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/parameters/s_mtt_01ASGN0Z000000000006.param].
+DIRECTOR> VAR_27028 [2021-09-09 03:48:28.923] Use override value [s_mtt_01ASGN0Z000000000006_1_error.csv] for user-defined workflow/worklet variable:[$ErrorFileName].
+DIRECTOR> VAR_27028 [2021-09-09 03:48:28.923] Use override value [1970-01-01] for user-defined workflow/worklet variable:[$LastRunDate].
+DIRECTOR> VAR_27028 [2021-09-09 03:48:28.923] Use override value [1970-01-01 00:00:00] for user-defined workflow/worklet variable:[$LastRunTime].
+DIRECTOR> VAR_27028 [2021-09-09 03:48:28.923] Use override value [s_mtt_01ASGN0Z000000000006_9_9_2021_03_48_success.csv] for user-defined workflow/worklet variable:[$SuccessFileName].
+DIRECTOR> TM_6014 [2021-09-09 03:48:28.923] Initializing session [s_mtt_01ASGN0Z000000000006] at [Thu Sep 09 03:48:28 2021].
+DIRECTOR> TM_6683 [2021-09-09 03:48:28.923] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2021-09-09 03:48:28.923] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2021-09-09 03:48:28.923] Folder: []
+DIRECTOR> TM_6685 [2021-09-09 03:48:28.923] Workflow: [wf_mtt_01ASGN0Z000000000006] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6101 [2021-09-09 03:48:28.923] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2021-09-09 03:48:28.924] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2021-09-09 03:48:28.928] Session [s_mtt_01ASGN0Z000000000006] is run by 64-bit Integration Service  [], version [9.1.0 HotFix1], build [0627].
+MANAGER> PETL_24058 [2021-09-09 03:48:29.004] Running Partition Group [1].
+MANAGER> PETL_24000 [2021-09-09 03:48:29.004] Parallel Pipeline Engine initializing.
+MANAGER> PETL_24001 [2021-09-09 03:48:29.004] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2021-09-09 03:48:29.005] Initializing session run.
+MAPPING> CMN_1569 [2021-09-09 03:48:29.007] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2021-09-09 03:48:29.007] Server Code page: [ISO 8859-1 Western European]
+MAPPING> TM_6151 [2021-09-09 03:48:29.007] The session sort order is [Binary].
+MAPPING> TM_6185 [2021-09-09 03:48:29.007] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65083 [2021-09-09 03:48:29.007] Current Timezone:[UTC +0:0]
+MAPPING> CMN_65085 [2021-09-09 03:48:29.008] Current Process ID:[3612]
+MAPPING> TM_6155 [2021-09-09 03:48:29.008] Using HIGH precision processing.
+MAPPING> TM_6180 [2021-09-09 03:48:29.008] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2021-09-09 03:48:29.008] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2021-09-09 03:48:29.008] DTM error log disabled. 
+MAPPING> TE_7022 [2021-09-09 03:48:29.008] TShmWriter: Initialized
+MAPPING> DBG_21694 [2021-09-09 03:48:29.011] Max_Price_Aggregator Partition [0]: Index cache size = [1000000], Data cache size = [2000000]
+MAPPING> TE_7212 [2021-09-09 03:48:29.011] Increasing [Index Cache] size for transformation [Max_Price_Aggregator] from [1000000] to [10549248].
+MAPPING> TE_7212 [2021-09-09 03:48:29.011] Increasing [Data Cache] size for transformation [Max_Price_Aggregator] from [2000000] to [2097608].
+MAPPING> TE_7029 [2021-09-09 03:48:29.011] Aggregate Information: Creating New Index and Data Files
+MAPPING> TE_7034 [2021-09-09 03:48:29.011] Aggregate Information: Index file is [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_5_0.idx]
+MAPPING> TE_7035 [2021-09-09 03:48:29.011] Aggregate Information: Data file is [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_5_0.dat]
+MAPPING> DBG_21694 [2021-09-09 03:48:29.012] Min_Price_Aggregator Partition [0]: Index cache size = [1000000], Data cache size = [2000000]
+MAPPING> TE_7212 [2021-09-09 03:48:29.012] Increasing [Index Cache] size for transformation [Min_Price_Aggregator] from [1000000] to [10549248].
+MAPPING> TE_7212 [2021-09-09 03:48:29.012] Increasing [Data Cache] size for transformation [Min_Price_Aggregator] from [2000000] to [2097608].
+MAPPING> TE_7029 [2021-09-09 03:48:29.012] Aggregate Information: Creating New Index and Data Files
+MAPPING> TE_7034 [2021-09-09 03:48:29.012] Aggregate Information: Index file is [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_6_0.idx]
+MAPPING> TE_7035 [2021-09-09 03:48:29.012] Aggregate Information: Data file is [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_6_0.dat]
+MAPPING> TM_6007 [2021-09-09 03:48:29.013] DTM initialized successfully for session [s_mtt_01ASGN0Z000000000006]
+DIRECTOR> PETL_24033 [2021-09-09 03:48:29.045] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2021-09-09 03:48:29.045] Starting pre-session tasks. : (Thu Sep 09 03:48:29 2021)
+MANAGER> PETL_24027 [2021-09-09 03:48:29.047] Pre-session task completed successfully. : (Thu Sep 09 03:48:29 2021)
+DIRECTOR> PETL_24006 [2021-09-09 03:48:29.047] Starting data movement.
+MAPPING> TM_6660 [2021-09-09 03:48:29.047] Total Buffer Pool size is 15798240 bytes and Block size is 562080 bytes.
+READER_1_1_1> DBG_21438 [2021-09-09 03:48:29.049] Reader: Source is [odbc://dbtype=MySQL;host=sql6.freemysqlhosting.net;port=3306;database=sql6435344], user [sql6435344]
+READER_1_1_1> BLKR_16051 [2021-09-09 03:48:29.051] Source database connection [Conn_01ASGN0B000000000004] code page: [UTF-8 encoding of Unicode]
+READER_1_1_1> CMN_1021 [2021-09-09 03:48:29.051] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+READER_1_1_1> CMN_1021 [2021-09-09 03:48:30.530] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=sql6.freemysqlhosting.net;Database=sql6435344;Port=3306;USER=sql6435344;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [sql6435344]
+DBMS Name:	MySQL
+DBMS Version:	5.5.62-0ubuntu0.14.04.1
+Driver Name:	libmyodbc8w.so
+Driver Version:	08.00.0012
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+READER_1_1_1> BLKR_16003 [2021-09-09 03:48:30.530] Initialization completed successfully.
+WRITER_1_*_1> WRT_8147 [2021-09-09 03:48:30.532] Writer: Target is database [odbc://dbtype=MySQL;host=sql6.freemysqlhosting.net;port=3306;database=sql6435344], user [sql6435344], bulk mode [OFF]
+WRITER_1_*_1> CMN_1021 [2021-09-09 03:48:30.532] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+WRITER_1_*_1> CMN_1021 [2021-09-09 03:48:32.074] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=sql6.freemysqlhosting.net;Database=sql6435344;Port=3306;USER=sql6435344;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [sql6435344]
+DBMS Name:	MySQL
+DBMS Version:	5.5.62-0ubuntu0.14.04.1
+Driver Name:	libmyodbc8w.so
+Driver Version:	08.00.0012
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+WRITER_1_*_1> WRT_8221 [2021-09-09 03:48:32.418] Target database connection [Conn_01ASGN0B000000000004] code page: [UTF-8 encoding of Unicode]
+WRITER_1_*_1> WRT_8124 [2021-09-09 03:48:32.420] Target Table Max_Car_Prices :SQL INSERT statement:
+INSERT INTO sql6435344.Max_Car_Prices(Car_ID,Car_Name,Car_Price)  VALUES ( ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2021-09-09 03:48:32.420] No column marked as primary key for table [Max_Car_Prices]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8147 [2021-09-09 03:48:32.420] Writer: Target is database [odbc://dbtype=MySQL;host=sql6.freemysqlhosting.net;port=3306;database=sql6435344], user [sql6435344], bulk mode [OFF]
+WRITER_1_*_1> WRT_8124 [2021-09-09 03:48:32.421] Target Table Min_Car_Prices :SQL INSERT statement:
+INSERT INTO sql6435344.Min_Car_Prices(Car_ID,Car_Name,Car_Price)  VALUES ( ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2021-09-09 03:48:32.421] No column marked as primary key for table [Min_Car_Prices]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8270 [2021-09-09 03:48:32.421] Target connection group #1 consists of target(s) [Max_Car_Prices, Min_Car_Prices]
+WRITER_1_*_1> WRT_8003 [2021-09-09 03:48:32.421] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2021-09-09 03:48:32.421] Reader run started.
+WRITER_1_*_1> WRT_8005 [2021-09-09 03:48:32.421] Writer run started.
+WRITER_1_*_1> WRT_8158 [2021-09-09 03:48:32.421] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Thu Sep 09 03:48:32 2021
+
+Target tables:
+
+     Max_Car_Prices
+     Min_Car_Prices
+
+
+READER_1_1_1> RR_4010 [2021-09-09 03:48:32.422] SQ instance [CarsDB] SQL Query [SELECT sql6435344.Cars.Car_ID, sql6435344.Cars.Car_Name, sql6435344.Cars.Car_Country, sql6435344.Cars.Car_Price FROM sql6435344.Cars]
+READER_1_1_1> RR_4049 [2021-09-09 03:48:32.422] SQL Query issued to database : (Thu Sep 09 03:48:32 2021)
+READER_1_1_1> RR_4050 [2021-09-09 03:48:32.593] First row returned from database to reader : (Thu Sep 09 03:48:32 2021)
+READER_1_1_1> BLKR_16019 [2021-09-09 03:48:32.593] Read [100] rows, read [0] error rows for source table [Cars] instance name [Cars]
+READER_1_1_1> BLKR_16008 [2021-09-09 03:48:32.593] Reader run completed.
+TRANSF_1_1_1> TE_7032 [2021-09-09 03:48:32.616] The B-Tree being managed in files
+/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_5_0.dat for Data and
+
+/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_5_0.idx for Index has:
+	Index Size:	1535
+	Row Size:	624
+	Order:		100
+	Minimum Order:	50
+	Height:		1
+	Entries:	20
+	IndexPageSize:	155136
+	IndexPages:	68
+	DataPageSize:	632
+	DataPages:	3319
+
+WRITER_1_*_1> WRT_8167 [2021-09-09 03:48:32.616] Start loading table [Max_Car_Prices] at: Thu Sep 09 03:48:32 2021
+TRANSF_1_1_1> TE_7032 [2021-09-09 03:48:32.617] The B-Tree being managed in files
+/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_6_0.dat for Data and
+
+/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_6_0.idx for Index has:
+	Index Size:	1535
+	Row Size:	624
+	Order:		100
+	Minimum Order:	50
+	Height:		1
+	Entries:	20
+	IndexPageSize:	155136
+	IndexPages:	68
+	DataPageSize:	632
+	DataPages:	3319
+
+TRANSF_1_1_1> DBG_21216 [2021-09-09 03:48:32.617] Finished transformations for Source Qualifier [CarsDB]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2021-09-09 03:48:36.025] Start loading table [Min_Car_Prices] at: Thu Sep 09 03:48:36 2021
+WRITER_1_*_1> WRT_8168 [2021-09-09 03:48:39.417] End loading table [Max_Car_Prices] at: Thu Sep 09 03:48:39 2021
+WRITER_1_*_1> WRT_8141 [2021-09-09 03:48:39.589] 
+Commit on end-of-data  Thu Sep 09 03:48:39 2021
+===================================================
+
+WRT_8036 Target: Max_Car_Prices (Instance Name: [Max_Car_Prices])
+WRT_8038 Inserted rows - Requested: 20         Applied: 20         Rejected: 0          Affected: 20        
+
+WRT_8036 Target: Min_Car_Prices (Instance Name: [Min_Car_Prices])
+WRT_8038 Inserted rows - Requested: 20         Applied: 20         Rejected: 0          Affected: 20        
+
+WRITER_1_*_1> WRT_8168 [2021-09-09 03:48:39.589] End loading table [Min_Car_Prices] at: Thu Sep 09 03:48:39 2021
+WRITER_1_*_1> WRT_8035 [2021-09-09 03:48:39.590] Load complete time: Thu Sep 09 03:48:39 2021
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: Max_Car_Prices (Instance Name: [Max_Car_Prices])
+WRT_8038 Inserted rows - Requested: 20         Applied: 20         Rejected: 0          Affected: 20        
+
+WRT_8036 Target: Min_Car_Prices (Instance Name: [Min_Car_Prices])
+WRT_8038 Inserted rows - Requested: 20         Applied: 20         Rejected: 0          Affected: 20        
+
+
+WRITER_1_*_1> WRT_8043 [2021-09-09 03:48:39.590] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2021-09-09 03:48:39.765] Writer run completed.
+MANAGER> PETL_24031 [2021-09-09 03:48:39.766] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [CarsDB] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [CarsDB] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Max_Car_Prices, Min_Car_Prices] has completed.
+	Total Run Time = [7.148832] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+
+MAPPING> CMN_1791 [2021-09-09 03:48:39.766] The index cache size that would hold [20] aggregate groups of input rows for [Max_Price_Aggregator], in memory, is [155136] bytes
+MAPPING> CMN_1790 [2021-09-09 03:48:39.766] The data cache size that would hold [20] aggregate groups of input rows for [Max_Price_Aggregator], in memory, is [12640] bytes
+MAPPING> CMN_1791 [2021-09-09 03:48:39.766] The index cache size that would hold [20] aggregate groups of input rows for [Min_Price_Aggregator], in memory, is [155136] bytes
+MAPPING> CMN_1790 [2021-09-09 03:48:39.766] The data cache size that would hold [20] aggregate groups of input rows for [Min_Price_Aggregator], in memory, is [12640] bytes
+MANAGER> PETL_24005 [2021-09-09 03:48:39.767] Starting post-session tasks. : (Thu Sep 09 03:48:39 2021)
+MANAGER> PETL_24029 [2021-09-09 03:48:39.768] Post-session task completed successfully. : (Thu Sep 09 03:48:39 2021)
+MAPPING> TM_6018 [2021-09-09 03:48:39.768] The session completed with [0] row transformation errors. 
+MANAGER> TE_7216 [2021-09-09 03:48:39.768] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_5_0.idx] for transformation [Max_Price_Aggregator].
+MANAGER> TE_7216 [2021-09-09 03:48:39.768] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_5_0.dat] for transformation [Max_Price_Aggregator].
+MANAGER> TE_7216 [2021-09-09 03:48:39.769] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_6_0.idx] for transformation [Min_Price_Aggregator].
+MANAGER> TE_7216 [2021-09-09 03:48:39.769] Deleting cache files [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/01ASGN0E0000000000B7/01ASGN/cache/PMAGG-494706672_6_0.dat] for transformation [Min_Price_Aggregator].
+MANAGER> PETL_24002 [2021-09-09 03:48:40.022] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2021-09-09 03:48:40.023] Session run completed successfully.
+DIRECTOR> TM_6022 [2021-09-09 03:48:40.023] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2021-09-09 03:48:40.023] Source Load Summary.
+DIRECTOR> CMN_1740 [2021-09-09 03:48:40.023] Table: [CarsDB] (Instance Name: [CarsDB])
+	 Output Rows [100], Affected Rows [100], Applied Rows [100], Rejected Rows [0]
+DIRECTOR> TM_6253 [2021-09-09 03:48:40.023] Target Load Summary.
+DIRECTOR> CMN_1740 [2021-09-09 03:48:40.023] Table: [Max_Car_Prices] (Instance Name: [Max_Car_Prices])
+	 Output Rows [20], Affected Rows [20], Applied Rows [20], Rejected Rows [0]
+DIRECTOR> CMN_1740 [2021-09-09 03:48:40.023] Table: [Min_Car_Prices] (Instance Name: [Min_Car_Prices])
+	 Output Rows [20], Affected Rows [20], Applied Rows [20], Rejected Rows [0]
+DIRECTOR> TM_6023 [2021-09-09 03:48:40.023] 
+===================================================
+
+DIRECTOR> TM_6020 [2021-09-09 03:48:40.023] Session [s_mtt_01ASGN0Z000000000006] completed at [Thu Sep 09 03:48:40 2021].
