@@ -1,0 +1,51 @@
+$hive
+
+--create db
+
+create database mydatabase;
+
+--use db
+
+use database mydatabase;
+
+
+--create table under that db
+
+create table mytable
+(actor STRING, Dialogue STRING)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+TBLPROPERTIES ("skip.header.line.count"="1");
+
+---load the file into the table
+
+hive> LOAD DATA LOCAL INPATH
+'./totalepisodes.txt'
+into table mytable;
+
+--- select all detailsf 
+
+select actor,count(actor) as counter from mytable group by actor order by counter DESC;
+
+---find the out put diretory
+
+hive> dfs -ls 'hdfs:///user/root/output/export';
+
+--- copy the output inside HDFS
+
+ INSERT OVERWRITE DIRECTORY '/user/root/output/export/'
+    > ROW format delimited fields terminated by '\n'
+    > select actor,count(actor) as counter from mytable group by actor order by counter DESC;
+
+
+---copy the output inside local
+
+hive> dfs -copyToLocal 'hdfs:///user/root/output/export/000000_0' './output.txt';
+
+
+--get out of hive
+
+exit;
+
+-- check the output file found in local
+
+cat output.txt
